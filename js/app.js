@@ -24,7 +24,22 @@ $(document).ready(function() {
 	.mouseup(function() {
 		$(".ryu-throwing").hide();
 		$(".ryu-ready").show();
-		// ryu goes back to steady position
+	});
+	$(document).keydown(function(event) {
+		if (event.which == 88) {
+			console.log('you pressed x');
+			$(".ryu-ready").hide();
+			$(".ryu-throwing").hide();
+			$(".ryu-still").hide();
+			$(".ryu-cool").show();
+		}
+	})
+	.keyup(function(event) {
+		if (event.which == 88) {
+			console.log("you released x");
+			$(".ryu-cool").hide();
+			$(".ryu-still").show();
+		}
 	})
 });
 
