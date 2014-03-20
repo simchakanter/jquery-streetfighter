@@ -15,10 +15,12 @@ body {
 	float: left;
 }
 
+/* I added the hadouken class here, can't group with below */
 .hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
   background-repeat: no-repeat;
 }
 
+/* Am I better off using multiple classes or a child element? */
 .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
   width: 659px;
   height: 494px;
